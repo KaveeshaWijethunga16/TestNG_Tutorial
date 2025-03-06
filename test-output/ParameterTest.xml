@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="Test Parameter Suite" verbose="2">
+
+
+    <parameter name = "val1"  value ="60"></parameter>
+    <parameter name = "val2"  value ="10"></parameter>
+
+    <test name="Params 01">
+        <classes>
+
+            <parameter name = "val1"  value ="40"></parameter>
+            <parameter name = "val2"  value ="10"></parameter>
+            <class name="parameter.ParameterTest01"/>
+
+        </classes>
+
+
+    </test>
+
+
+    <test name="Params 02">
+        <classes>
+            <class name="testNG.parameter.ParameterTest02"/>
+
+        </classes>
+
+    </test>
+
+    <test name="Params 03">
+        <parameter name="browser" value="firefox12"></parameter>
+        <classes>
+            <class name="testNG.parameter.ParameterTest03"/>
+
+        </classes>
+
+    </test>
+
+
+</suite>
